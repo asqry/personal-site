@@ -1,0 +1,27 @@
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-170%) scale(0.42);
+  }
+}
+
+.slideUp {
+  animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(400%) scale(2.5);
+  }
+}
+
+.slideDown {
+  animation: slideDown 1s ease forwards;
+}

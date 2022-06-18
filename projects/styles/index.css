@@ -1,0 +1,119 @@
+:root {
+  --background-color: #2e3440;
+  --background-light: #444852;
+  --text-color-directory-slash: #4d5159;
+  --text-color-main: #ffffff;
+  --brand-color: #d78fb4;
+
+  --border-radius-small-rect: 12px;
+  --border-radius-large-rect: 25px;
+  --border-radius-circle-icons: 100px;
+}
+
+/* Top Navigation Bar */
+
+.top-center-nav {
+  width: 33.3%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-center-nav-logo {
+  width: 70px;
+  height: 70px;
+}
+
+/* Top Navigation Bar */
+
+/* Main Content */
+
+.content-top {
+  width: 100%;
+  height: auto;
+  min-height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: -100px;
+
+  font-size: 2rem;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--background-light);
+  width: 3px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--brand-color);
+  height: 1px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background-color);
+}
+
+.content-projects {
+  overflow-y: scroll;
+
+  width: 80%;
+  max-height: 60vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.content-project-card {
+  background-color: var(--background-light);
+  color: var(--text-color-main);
+
+  min-width: 550px;
+  height: auto;
+  min-height: 200px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 20px;
+
+  border-radius: var(--border-radius-large-rect);
+  border: none;
+}
+
+.content-project-card:hover {
+  transition: all 0.2s ease-in-out;
+
+  background-color: var(--brand-color);
+
+  cursor: pointer;
+}
+
+.content-project-card:not(:hover) {
+  transition: all 0.2s ease-in-out;
+
+  background-color: var(--background-light);
+
+  cursor: pointer;
+}
+
+.content-project-card img.project-image {
+  max-height: 150px;
+}
+
+.content-project-card p.project-click-prompt {
+  font-size: 2rem;
+  width: 30%;
+}
+
+/* Main Content */
