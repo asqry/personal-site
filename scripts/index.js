@@ -10,6 +10,9 @@ let navButton = document.querySelector('.top-left-nav-button-container');
 
 let projectCards = document.querySelectorAll('.content-project-card');
 
+let burger = document.getElementById('burger');
+let navbar = document.querySelector('.nav-sidebar');
+
 // Navigation Handling :)
 
 function navigateExternal(route) {
@@ -57,4 +60,18 @@ projectCards.forEach(card => {
     console.log('hi');
     navigateInternal(`/projects/project/${card.id}.html`);
   };
+});
+
+// burger
+burger.addEventListener('click', e => {
+  console.log(navbar.classList.contains('hidden'));
+  if (navbar.classList.contains('hidden')) {
+    navbar.classList.remove('hidden');
+
+    navbar.classList.add('slideLeft');
+  } else {
+    navbar.classList.add('hidden');
+  }
+
+  console.log('clicked');
 });

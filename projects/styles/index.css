@@ -62,6 +62,7 @@
 
 .content-projects {
   overflow-y: scroll;
+  overflow-x: hidden;
 
   width: 80%;
   max-height: 60vh;
@@ -117,3 +118,23 @@
 }
 
 /* Main Content */
+
+/* 750px */
+@media screen and (max-width: 750px) {
+  .content-projects {
+    width: 100%;
+  }
+
+  .content-project-card {
+    min-width: 100%;
+    flex-direction: column;
+  }
+
+  .top-right-nav-burger {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

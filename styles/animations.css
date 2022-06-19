@@ -25,3 +25,31 @@
 .slideDown {
   animation: slideDown 1s ease forwards;
 }
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(200px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slideLeft {
+  animation: slideLeft 0.5s ease-out forwards;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(300px);
+  }
+}
+
+.slideRight {
+  animation: slideRight 0.5s ease-out forwards;
+}
